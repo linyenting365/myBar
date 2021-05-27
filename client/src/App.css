@@ -1,0 +1,601 @@
+.App {
+  text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Indie+Flower&display=swap');
+/* navbar */
+.myNavbar {
+  font-family: 'Courgette', cursive;
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+/* log in / Sign up / log out font */
+.navLog {
+  font-family: Trebuchet MS;
+}
+
+.navAvatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.navDropdown {
+  background-color: #343a40;
+  color: #343a40;
+  border: none;
+}
+
+.homeCover {
+  margin: 15px 15px !important;
+}
+
+.jumbotron {
+  height: 400px;
+  background-image: url('https://images.unsplash.com/photo-1544782321-8fab42cfd62e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+  background-size: auto 100%;
+  color: white;
+  text-align: center;
+  opacity: 0.9;
+  font-family: 'Courgette', cursive;
+}
+
+.jumbotron p {
+  margin-top: 5%;
+}
+
+.jumbotron h1 {
+  margin-top: 3%;
+  font-size: 50px;
+}
+
+.cocktailImg {
+  border-radius: 50%;
+  width: 175px;
+}
+
+.middle {
+  transition: 0.5s easet;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.cocktail:hover .cocktailImg {
+  opacity: 0.7;
+}
+
+.cocktail:hover .middle {
+  opacity: 0.8;
+}
+
+.text {
+  color: white;
+  font-size: 14px;
+  padding: 16px 32px;
+}
+
+.cocktail {
+  text-align: center;
+  padding: auto;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.divider {
+  border-top: 5px solid rgb(117, 110, 110);
+  border-radius: 10px;
+  margin-top: 30px;
+  width: 65%;
+  /* padding-top: 20px; */
+  /* padding-bottom: 20px; */
+}
+
+/* Top 10, popular ...*/
+.cocktailCategory {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: 'Courgette', cursive;
+}
+
+.cocktailName {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* cocktailDetail */
+
+.cocktailDetailName {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 900;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Courgette', cursive;
+  color: rgb(59, 59, 59);
+  /* font-family: 'Courgette', cursive; */
+}
+
+.cocktailDetailImg {
+  border-radius: 10%;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.cocktailDetailInstruction {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.detailIngredientImg {
+  border-radius: 10%;
+  width: 105px;
+  height: 105px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* add detail ingredient image shake */
+.detailIngredientImg:hover {
+  animation: shake 0.7s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+}
+
+.detailTitle {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  /* padding-top: 10px; */
+  padding-bottom: 20px;
+  color: rgb(88, 88, 88);
+  font-family: 'Courgette', cursive;
+}
+
+.detailDivider {
+  border-top: 4px solid rgb(117, 110, 110);
+  border-radius: 3px;
+  width: 65%;
+}
+
+.ingredientDescription {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  /* padding-top: px; */
+}
+
+/* description button */
+
+.btn-outline-info {
+  font-weight: 500;
+  color: black;
+}
+
+.footer {
+  clear: both;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 60px;
+}
+
+a.ingredLink {
+  color: rgb(0, 55, 107);
+}
+
+a.ingredLink:hover {
+  font-size: 110%;
+  text-decoration: none;
+}
+
+a.cocktailNameLink {
+  color: rgb(0, 0, 0);
+}
+
+a.cocktailNameLink:hover {
+  color: rgb(59, 59, 59);
+  text-decoration: none;
+}
+
+/* let footer stick bottom */
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
+
+/* Drinks page */
+
+.categoryImg {
+  border-radius: 30%;
+  width: 205px;
+}
+
+.categoryDescription {
+  width: 50%;
+  text-align: center;
+  margin-inline: auto;
+  margin-bottom: 40px;
+  margin: top 0%;
+  /* font-family: 'Courgette', cursive; */
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(59, 59, 59);
+}
+
+.loginForm {
+  width: 30%;
+  margin: 20px auto;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.btn-random {
+  background-color: white;
+  border: none;
+  color: #343a40;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  width: 160px;
+  transition-duration: 0.4s;
+  border: 3px solid #343a40;
+  border-radius: 12px;
+}
+
+.btn-random:hover {
+  background-color: #343a40;
+  color: white;
+  border: 3px solid #343a40;
+}
+
+.btn-form {
+  background-color: #343a40;
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 20px 0;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100%;
+  transition-duration: 0.4s;
+  border: 4px solid #343a40;
+  border-radius: 12px;
+}
+
+.btn-form:hover {
+  background-color: white;
+  color: #343a40;
+  border: 4px solid #343a40;
+}
+
+.btn-google {
+  background-color: white;
+  border: none;
+  color: #343a40;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 20px 0;
+  cursor: pointer;
+  font-weight: 700;
+  width: 100%;
+  transition-duration: 0.4s;
+  border: 4px solid #343a40;
+  border-radius: 12px;
+}
+
+.btn-google:hover {
+  transform: translateY(-3px);
+}
+
+.btn-favorite {
+  background-color: white;
+  color: rgb(245, 94, 94);
+  padding: 5px 5px;
+  font-size: 15px;
+  /* border: none; */
+  /* text-align: center; */
+  text-decoration: none;
+  font-weight: 700;
+  transition-duration: 0.4s;
+  border: 3px solid rgb(245, 94, 94);
+  border-radius: 12px;
+}
+
+.btn-favorite:not(:focus):hover {
+  background-color: rgb(245, 94, 94);
+  color: white;
+  padding: 5px 5px;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 700;
+  transition-duration: 0.4s;
+  border: 3px solid rgb(245, 94, 94);
+  border-radius: 12px;
+}
+
+.btn-favorite:focus {
+  background-color: white;
+  color: rgb(245, 94, 94);
+  padding: 5px 5px;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 700;
+  transition-duration: 0.4s;
+  border: 3px solid rgb(245, 94, 94);
+  border-radius: 12px;
+}
+
+.btn-remove {
+  background-color: white;
+  color: rgb(246, 50, 50);
+  padding: 8px 8px;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 700;
+  transition-duration: 0.4s;
+  border: 3px solid rgb(246, 50, 50);
+  border-radius: 12px;
+  margin-left: 5px;
+}
+
+.btn-remove:hover {
+  background-color: rgb(246, 50, 50);
+  color: white;
+  padding: 8px 8px;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 700;
+  transition-duration: 0.4s;
+  border: 3px solid rgb(246, 50, 50);
+  border-radius: 12px;
+  margin-left: 5px;
+}
+
+.btn-moreInfo {
+  background-color: white;
+  color: rgb(0, 140, 255);
+  padding: 8px 8px;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 700;
+  transition-duration: 0.4s;
+  border: 3px solid rgb(0, 140, 255);
+  border-radius: 12px;
+  margin-right: 5px;
+  /* font-family: Trebuchet MS; */
+}
+
+.btn-moreInfo:hover {
+  background-color: rgb(0, 140, 255);
+  color: white;
+  padding: 8px 8px;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 700;
+  transition-duration: 0.4s;
+  border: 3px solid rgb(0, 140, 255);
+  border-radius: 12px;
+  margin-right: 5px;
+  /* font-family: Trebuchet MS; */
+}
+
+.btn-edit {
+  background-color: white;
+  color: rgb(23, 176, 0);
+  padding: 8px 8px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  transition-duration: 0.4s;
+  border: 4px solid rgb(23, 176, 0);
+  border-radius: 12px;
+  margin-right: 5px;
+  /* font-family: Trebuchet MS; */
+}
+
+.btn-edit:hover {
+  background-color: rgb(23, 176, 0);
+  color: white;
+  padding: 8px 8px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  transition-duration: 0.4s;
+  border: 4px solid rgb(23, 176, 0);
+  border-radius: 12px;
+  margin-right: 5px;
+  /* font-family: Trebuchet MS; */
+}
+
+.btn-upload {
+  background-color: white;
+  border: none;
+  color: #343a40;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  width: 130px;
+  transition-duration: 0.4s;
+  border: 3px solid #343a40;
+  border-radius: 12px;
+}
+
+.btn-upload:hover {
+  background-color: #343a40;
+  color: white;
+  border: 3px solid #343a40;
+}
+
+.addIcon {
+  color: #343a40;
+  border: 5px solid #343a40;
+  border-radius: 50%;
+}
+
+.addIcon:hover {
+  color: #515b65;
+  border: 5px solid #515b65;
+}
+
+.googleImg {
+  width: 20px;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+
+.formText {
+  color: grey;
+  font-size: 16px;
+  text-align: center;
+}
+
+input[type='username'] {
+  padding: 20px 10px;
+  margin: 20px 0;
+  border: 4px solid #343a40;
+  font-size: 15px;
+}
+
+input[type='title'] {
+  padding: 20px 10px;
+  margin: 20px 0;
+  border: 3px solid #343a40;
+  font-size: 15px;
+}
+
+input[type='password'] {
+  padding: 20px 10px;
+  margin: 20px 0;
+  font-size: 15px;
+  border: 4px solid #343a40;
+}
+input[type='email'] {
+  padding: 20px 10px;
+  margin: 20px 0;
+  font-size: 15px;
+  border: 4px solid #343a40;
+}
+
+.userProfileTitle {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 900;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Courgette', cursive;
+  color: rgb(59, 59, 59);
+}
+
+.userProfile {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* font-family: Trebuchet MS; */
+  color: rgb(59, 59, 59);
+}
+.userImg:hover .userProfileImg {
+  opacity: 0.7;
+}
+.userImg:hover .middle {
+  opacity: 1;
+}
+.userImgText {
+  color: white;
+  font-size: 14px;
+  padding: 16px 32px;
+  background-color: rgb(78, 78, 78);
+  background-size: auto;
+}
+
+.userProfileImg {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.flashMsg {
+  font-size: 20px;
+  font-family: Trebuchet MS;
+  font-weight: 400;
+}
+
+.aboutPageImg {
+  width: 100%;
+  height: 40vh;
+  opacity: 0.9;
+}
+
+.aboutPageDescription {
+  font-size: 22px;
+  font-family: Trebuchet MS;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* user post form */
+.postForm {
+  width: 40%;
+  margin: 20px auto;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.postContent {
+  font-size: 20px;
+  font-weight: 600;
+}
